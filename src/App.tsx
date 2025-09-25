@@ -8,6 +8,7 @@ import ProtectedRoute from "@/components/ProtectedRoute";
 import Layout from "@/components/Layout";
 import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
+import Inventario from "@/pages/Inventario";
 import Produccion from "@/pages/Produccion";
 import Decoracion from "@/pages/Decoracion";
 import Merma from "@/pages/Merma";
@@ -28,6 +29,13 @@ const App = () => (
               <ProtectedRoute>
                 <Layout>
                   <Dashboard />
+                </Layout>
+              </ProtectedRoute>
+            } />
+            <Route path="/inventario" element={
+              <ProtectedRoute>
+                <Layout>
+                  <Inventario />
                 </Layout>
               </ProtectedRoute>
             } />
