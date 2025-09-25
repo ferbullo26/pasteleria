@@ -9,7 +9,8 @@ import {
   AlertTriangle, 
   LogOut, 
   Cake,
-  User
+  User,
+  Package
 } from 'lucide-react';
 
 interface LayoutProps {
@@ -28,6 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const navItems = [
     { path: '/', icon: LayoutDashboard, label: 'Dashboard' },
+    { path: '/inventario', icon: Package, label: 'Inventario' },
     { path: '/produccion', icon: ChefHat, label: 'Producción' },
     { path: '/decoracion', icon: Palette, label: 'Decoración' },
     { path: '/merma', icon: AlertTriangle, label: 'Merma' },
